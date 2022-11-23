@@ -85,7 +85,7 @@ function categoryAnimation(container, path){
     return animation;
 }
 
-let animationBAM = categoryAnimation( document.getElementById("BAM"), "./jfiles/05_Animation_V05.json" );
+let animationBAM = categoryAnimation( document.getElementById("BAM"), "./jfiles/Lottie5.json" );
 const second = document.getElementById("second");
 const secondObserver = new IntersectionObserver(
     entries => { entries.forEach(entry => {
@@ -97,7 +97,7 @@ const secondObserver = new IntersectionObserver(
 );
 secondObserver.observe(second);
 
-let animationBN = categoryAnimation( document.getElementById("BN"), "./jfiles/04_Animation_V03.json" );
+let animationBN = categoryAnimation( document.getElementById("BN"), "./jfiles/Lottie4.json" );
 const first = document.getElementById("first");
 const firstObserver = new IntersectionObserver(
     entries => { entries.forEach(entry => {
