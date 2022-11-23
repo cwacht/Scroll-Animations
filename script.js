@@ -74,7 +74,6 @@ elem?.animate(
     }
 );
 
-
 function categoryAnimation(container, path){
     let animation = bodymovin.loadAnimation({
         container: container,
@@ -85,7 +84,6 @@ function categoryAnimation(container, path){
     });
     return animation;
 }
-
 
 let animationBAM = categoryAnimation( document.getElementById("BAM"), "./jfiles/05_Animation_V05.json" );
 const second = document.getElementById("second");
