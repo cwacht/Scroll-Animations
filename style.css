@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body{
+    font-size: 10px;
+    margin: 0;
+}
+h2, h3, h4, h5, h6, .serif{
+    font-family: 'Playfair Display', serif;
+    max-width: 40rem;
+}
+p{
+    max-width: 40rem;
+}
+#page{
+    background-color: rgb(0 42 78 / 1);
+    color: white;
+    font-size: 1rem;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-align: center;
+}
+
+#intro{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 1em; */
+}
+
+.fade-up{
+    opacity: 0;
+}
+.fade-up.seen{
+    opacity: 1;
+}
+.fade-up.animate{
+    animation: fade-up 0.7s ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translate(0, 40px);
+        scale: 0.8;
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+        scale: 1;
+    }
+}
+.lottie-spacing{
+    max-width: 20rem;
+    position: relative;
+    top: -2rem;
+    margin: auto;
+    margin-bottom: -5rem;
+}
+
+.space {
+    height: 100vh;
+    background: cornflowerblue;
+  }
+
+  #cover-container{
+    position: relative;
+    width: 100%;
+    color: rgb(0 42 78 / 1);
+    margin-bottom: 30rem;
+    text-align: left;
+  }
+  #first{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #second{
+    position: absolute;
+    top: 0;
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+div#categories div {
+    max-width: 10rem;
+}
+
+div#categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#LookingAhead{
+    background: white;
+    color: rgb(0 42 78 / 1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 768px) {
+    .row-content {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .row-content.text-left {
+        flex-direction: row-reverse;
+        margin-top: 40px;
+    }
+    .row-content.text-right {
+        margin-bottom: 100px;
+    }
+    .path-step-2::before {
+        content:"";
+        background-image:url('data:image/svg+xml;utf8,<svg width="268" height="168" viewBox="0 0 268 168" fill="white" xmlns="http://www.w3.org/2000/svg"><circle cx="264.5" cy="3.5" r="3.5" fill="white"></circle><line x1="264.5" y1="4" x2="264.5" y2="84" stroke="white"></line><line x1="0.5" y1="168" x2="0.5" y2="83" stroke="white"></line><line x1="1" y1="83.5" x2="265" y2="83.5" stroke="white"></line></svg>');
+        position: absolute;
+        top: -40px;
+        left: 33%;
+        width: 18%;
+        height: 110px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .path-step-2::after {
+        content:"";
+        background-image:url('data:image/svg+xml;utf8,<svg width="554" height="139" viewBox="0 0 554 139" fill="white" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" x2="0.5" y2="100" stroke="white"></line><line x1="553.5" y1="139" x2="553.5" y2="99" stroke="white"></line><line x1="1" y1="99.5" x2="554" y2="99.5" stroke="white"></line></svg>');
+        position: absolute;
+        bottom: -80px;
+        left: 33%;
+        width: 34%;
+        height: 110px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .path-step-3::after {
+        content:"";
+        background-image:url('data:image/svg+xml;utf8,<svg width="333" height="168" viewBox="0 0 333 168" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3.5" cy="164.5" r="3.5" transform="rotate(-180 3.5 164.5)" fill="white"></circle><line x1="3.5" y1="164" x2="3.5" y2="84" stroke="white"></line><line x1="332.5" y1="85" x2="332.5" stroke="white"></line><line x1="3" y1="84.5" x2="333" y2="84.5" stroke="white"></line></svg>');
+        position: absolute;
+        bottom: -80px;
+        right: 33%;
+        width: 18%;
+        height: 110px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
